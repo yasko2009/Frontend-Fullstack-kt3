@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import { useState } from "react";
 
 export default function Login() {
@@ -13,6 +14,8 @@ export default function Login() {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8">
       <form
         onSubmit={handleSubmit}
@@ -59,5 +62,6 @@ export default function Login() {
         </button>
       </form>
     </div>
+    </>
   );
 }
